@@ -1,0 +1,56 @@
+@mixin transition($trans-type){
+  -webkit-transition: $trans-type 500ms ease;
+  -moz-transition: $trans-type 500ms ease;
+  -o-transition: $trans-type 500ms ease;
+  transition: $trans-type 500ms ease;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($shadow){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin input-placeholder($placeholder-color){
+  ::-webkit-input-placeholder {
+     color: $placeholder-color;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     color: $placeholder-color;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $placeholder-color;
+  }
+  :-ms-input-placeholder {
+     color: $placeholder-color;
+  }
+
+}
+
+@mixin opacity($opacity-val){
+    opacity: $opacity-val;
+}
+
+@mixin flex() {
+  -js-display: flex;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin background-cover($bgimage) {
+	background-image: url($bgimage);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}

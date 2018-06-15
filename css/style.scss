@@ -1,0 +1,179 @@
+// Includes
+@import "_variables";
+@import "_mixins";
+
+/*-----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
+
+  Global Styles
+
+-------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------
+  General
+--------------------------------*/
+
+body{
+  margin: 0;
+  font-family: Arial, sans-sans-serif;
+  a{
+    text-decoration: none;
+  }
+}
+div{
+  box-sizing: border-box;
+}
+
+.visible{
+  display: block!important;
+}
+
+
+h1,h2{
+  font-weight: 400;
+  color: $primary-dark;
+}
+
+/*--------------------------------
+NAV
+--------------------------------*/
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-logo{
+  padding: 20px;
+}
+
+.header-menu{
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    li{
+      padding: 20px;
+      a{
+        color: $primary-dark;
+      }
+      &.active{
+        font-weight: bold;
+        border-bottom: solid 3px $secondary;
+      }
+    }
+  }
+}
+
+
+
+/*--------------------------------
+BANNER
+--------------------------------*/
+
+.page-banner{
+  width: 100%;
+  height: 280px;
+  background: url(../img/banner-image-lrg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+/*--------------------------------
+CONTAINERS
+--------------------------------*/
+
+.page{
+  max-width: 1060px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  .page-sidebar{
+    width: 320px;
+    background: $lt-grey;
+    &_content{
+      padding: 20px;
+    }
+  }
+  .page-main{
+    width: 700px;
+    padding: 40px;
+    img{
+      float:right;
+      padding: 0 0 20px 20px;
+    }
+  }
+}
+
+.sidebar-nav_toggle{
+  background: $primary-dark;
+  padding: 20px;
+  a{
+    color: #fff;
+  }
+}
+
+.sidebar-nav_list{
+  ul{
+    background: $primary;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      border-bottom: solid 1px $lt-grey;
+      padding: 20px;
+      margin: 0;
+      a{
+        color: #fff;
+
+      }
+    }
+  }
+}
+
+
+
+
+
+/*--------------------------------
+TYPOGRAPHY
+--------------------------------*/
+
+/*--------------------------------
+IMAGES
+--------------------------------*/
+
+/*--------------------------------
+FOOTER
+--------------------------------*/
+
+.footer{
+    background:$primary-dark;
+    color: #fff;
+    .footer-content{
+      max-width: 1060px;
+      margin: auto;
+      padding: 20px;
+      color: #fff;
+      a{
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
+
+  Media Queries
+
+-------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------*/
+
+@import "_mediaqueries";

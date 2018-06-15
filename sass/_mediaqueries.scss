@@ -1,0 +1,64 @@
+/*--
+------------------------------
+MEDIA QUERIES
+------------------------------
+--*/
+
+
+@media (max-width: 480px){
+
+}
+
+@media (max-width: 600px){
+
+  .header{
+    flex-direction: column;
+  }
+
+  .page .page-main img{
+    float:none;
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .page-banner{
+    height: 200px;
+  }
+
+  .page{
+    flex-direction: column;
+    .page-sidebar{
+      width: 100%;
+    }
+    .page-main{
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  .sidebar-nav_toggle{
+    background: $secondary;
+  }
+  .sidebar-nav_list{
+    display: none;
+  }
+
+  .page-sidebar_content{
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 1060px){
+
+
+
+}
